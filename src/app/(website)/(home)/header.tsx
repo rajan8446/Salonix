@@ -41,6 +41,7 @@ const Header: React.FC = () => {
             height={40}
             className="rounded-full"
           />
+          <div className="h-6 w-px bg-dark-300 hidden sm:block"></div>
           <button className="text-brand-50 py-2 rounded-full hidden sm:block">
             Book Your Slot
           </button>

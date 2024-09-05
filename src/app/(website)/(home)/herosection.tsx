@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
+import Image from "next/image";
 import React from "react";
 
 const services = [
@@ -23,14 +24,16 @@ const HeroSection: React.FC = () => {
   return (
     <section className="bg-white py-16 px-4">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-4 sm:gap-2">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-8">
           {services.map((service, index) => (
 
                 <div key={index} className="text-center">
-                  <img
+                  <Image
                     src={service.src}
                     alt={service.label}
-                    className="w-20 h-20 mx-auto mb-2 bg-[#F6D5D7] p-4"
+                    width={24}
+                    height={24}
+                    className="w-24 h-30 mx-auto mb-2 bg-[#F6D5D7] p-4"
                   />
                   <p className="text-sm text-[#40111B]">{service.label}</p>
                 </div>

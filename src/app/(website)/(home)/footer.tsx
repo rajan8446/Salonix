@@ -134,15 +134,15 @@ const Footer: React.FC = () => {
 
           {/* Right Side: Newsletter Signup */}
           <div className="mt-8 lg:mt-0 lg:w-[40%]">
-            <h3 className="font-bold">JOIN OUR NEWSLETTER</h3>
-            <p className="mb-4 text-sm">
+            <h3 className="font-bold mb-2">JOIN OUR NEWSLETTER</h3>
+            <p className="mb-6 text-sm">
               Get all the latest Salonix updates delivered to your mailbox
             </p>
             <div className="flex sm:flex-row space-x-2 mb-6">
               <input
                 type="email"
                 placeholder="email@salonix.com"
-                className="px-4 py-2 sm:py-0bg-white text-black outline-none rounded-sm w-2/3"
+                className="px-4 py-3 sm:py-0bg-white text-black outline-none rounded-sm w-2/3"
               />
               <button className="px-4 bg-white text-brand-50 border-1 rounded-sm ">
                 SIGN UP
@@ -163,7 +163,7 @@ const Footer: React.FC = () => {
             />
           </div>
           {/* Social Icons */}
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 mr-8">
             <FaInstagram className="text-2xl cursor-pointer text-brand-300" />
             <FaFacebookF className="text-2xl cursor-pointer text-brand-300" />
             <FaWhatsapp className="text-2xl cursor-pointer text-brand-300" />

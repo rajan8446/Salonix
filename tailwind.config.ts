@@ -76,6 +76,9 @@ const config: Config = {
         900: "#224525",
         950: "#0e2510",
       },
+      heading:{
+        50:"#773F25"
+      },
       transparent: "transparent",
     },
     fontFamily: {

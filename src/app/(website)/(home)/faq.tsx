@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { GoPlus } from "react-icons/go";
+import HeadingTag from "./HeadingTag";
 
 type FAQItem = {
   question: string;
@@ -52,7 +53,12 @@ const FAQ: React.FC = () => {
     <div className="p-4 py-3 sm:my-12">
       <div className="max-w-[1250px] mx-auto gap-8 flex flex-col">
         <div className="text-center mb-8">
-          <h2 className="text-4xl text-dark-950">Help & Info</h2>
+          {/* <h2 className="text-4xl text-dark-950">Help & Info</h2> */}
+          <HeadingTag
+            text="Help & Info"
+            color="text-dark-950"
+            maxWidth="600px"
+          />
         </div>
         <div className="space-y-4 w-full">
           {faqData.map((faq, index) => (

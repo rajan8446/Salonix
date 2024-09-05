@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
+import HeadingTag from "./HeadingTag";
 
 const salons = [
   {
@@ -34,10 +35,12 @@ const SalonNearLocation: React.FC = () => {
       <div className="flex flex-col justify-between gap-8 mx-auto max-w-[1250px]">
         {/* Title Section */}
         <div className="text-center mb-8">
-          <h2 className="text-4xl text-[#7B2B3E]">
-            Discover Salons Near Lucknow's
-          </h2>
-          <h2 className="text-4xl text-[#7B2B3E]">Most Renowned Spots</h2>
+
+          <HeadingTag
+            text=" Discover Salons Near Lucknow's Most Renowned Spots"
+            color="text-heading-50"
+            maxWidth="600px"
+          />
         </div>
 
         {/* Deals Cards Section */}

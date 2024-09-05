@@ -1,4 +1,5 @@
 import Image from "next/image";
+import HeadingTag from "./HeadingTag";
 
 const Snapshot: React.FC = () => {
   const images = [
@@ -44,7 +45,12 @@ const Snapshot: React.FC = () => {
     <section className="py-12 px-4 ">
       <div className="flex flex-col mx-auto gap-8 max-w-[1250px]">
         <div className="text-center mb-8">
-          <h2 className="text-4xl text-brand-700">Picture Perfect Snapshot</h2>
+          {/* <h2 className="text-4xl text-brand-700">Picture Perfect Snapshot</h2> */}
+          <HeadingTag
+            text="Picture Perfect Snapshots"
+            color="text-heading-50"
+            maxWidth="600px"
+          />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:mt-24 ">
           {images.map((image, index) => {
